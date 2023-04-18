@@ -11,7 +11,7 @@
 .logo {
   font-size: 1.5rem;
   color: white;
-  font-family: "Fira", sans-serif;
+  font-family: 'Fira', sans-serif;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -21,7 +21,8 @@
 
 .logo a {
   text-decoration: none;
-  color: #94fdfd;
+  color: #fc0;
+  font-size: 1.4rem;
 }
 
 .navigation a {
@@ -30,9 +31,18 @@
   font-size: 1rem;
 }
 
+.list {
+  display: flex;
+}
+
+.list li {
+  display: inline-flex;
+  padding: 0 10px;
+}
+
 @media (min-width: 768px) {
-  .logo {
-    font-size: 2.5rem;
+  .logo a {
+    font-size: 1rem;
   }
 
   .navigation a {

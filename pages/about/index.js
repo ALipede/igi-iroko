@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import classes from '@/styles/Home.module.css';
+import classes from './About.module.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={classes.main}>
         <div className={classes.center}>
-          <h1>igi iroko 4 | multimedia</h1>
+          <h1>igi iroko | About</h1>
         </div>
       </main>
     </>
