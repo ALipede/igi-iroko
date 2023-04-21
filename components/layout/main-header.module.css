@@ -30,6 +30,10 @@
   color: #74dacc;
   font-size: 1rem;
 }
+.navigation a:hover,
+.navigation a:active {
+  color: #ffcc00;
+}
 
 .list {
   display: flex;
@@ -38,6 +42,7 @@
 .list li {
   display: inline-flex;
   padding: 0 10px;
+  color: #fff;
 }
 
 @media (min-width: 768px) {

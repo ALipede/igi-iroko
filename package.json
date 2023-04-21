@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/cache": "^11.10.7",
@@ -18,14 +20,18 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.0",
     "@mui/styled-engine-sc": "^5.12.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^5.2.3",
     "cssnano": "^6.0.0",
     "next": "13.3.0",
+    "next-images": "^1.8.5",
     "next-redux-wrapper": "^8.1.0",
     "node-sass": "^8.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "reactstrap": "^9.1.9",
@@ -34,9 +40,18 @@
     "styled-components": "^5.3.9"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.5",
+    "@storybook/addon-interactions": "^7.0.5",
+    "@storybook/addon-links": "^7.0.5",
+    "@storybook/blocks": "^7.0.5",
+    "@storybook/nextjs": "^7.0.5",
+    "@storybook/react": "^7.0.5",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "eslint-plugin-storybook": "^0.6.11",
+    "node-sass": "^5.0.0",
     "sass-loader": "^7.2.0",
-    "node-sass": "^5.0.0"
+    "storybook": "^7.0.5"
   }
 }

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CacheProvider } from '@emotion/react';
-import { ThemeProvider, CssBaseline } from '@mui/material';
+// import { ThemeProvider, CssBaseline } from '@mui/material';
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import createEmotionCache from '../utility/createEmotionCache';
-import lightTheme from '../styles/theme/lightTheme';
 import '../styles/globals.css';
 
 import Layout from '@/components/layout/layout';
@@ -16,9 +17,11 @@ const MyApp = props => {
 
   return (
     <CacheProvider value={emotionCache}>
-      <ThemeProvider theme={lightTheme}>
-        <CssBaseline />
-
+      <ThemeProvider
+        breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+        minBreakpoint="xxs"
+      >
+        {/* <CssBaseline /> */}
         <Layout>
           <Component {...pageProps} />
         </Layout>
