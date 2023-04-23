@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CacheProvider } from '@emotion/react';
-// import { ThemeProvider, CssBaseline } from '@mui/material';
+import { SSRProvider } from 'react-bootstrap';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Head from 'next/head';
 
 import createEmotionCache from '../utility/createEmotionCache';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 import Layout from '@/components/layout/layout';
 
@@ -17,15 +18,24 @@ const MyApp = props => {
 
   return (
     <CacheProvider value={emotionCache}>
-      <ThemeProvider
-        breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
-        minBreakpoint="xxs"
-      >
-        {/* <CssBaseline /> */}
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </ThemeProvider>
+      <Head>
+        <title>igi iroko | Home</title>
+        <meta
+          property="og:title"
+          content="igi iroko | multimedia"
+          key="igi iroko | multimedia"
+        />
+      </Head>
+      <SSRProvider>
+        <ThemeProvider
+          breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+          minBreakpoint="xxs"
+        >
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
+      </SSRProvider>
     </CacheProvider>
   );
 };

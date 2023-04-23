@@ -1,0 +1,21 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  background-color: #fc0 !important;
+}
+
+// .carousel-indicators [data-bs-target] {
+//   border-radius: 50%;
+//   width: 15px;
+//   height: 15px;
+// }

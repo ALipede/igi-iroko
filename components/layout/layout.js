@@ -10,7 +10,6 @@ function Layout(props) {
       <Container fixed>
         <main>{props.children}</main>
       </Container>
-
       <Footer />
     </Fragment>
   );

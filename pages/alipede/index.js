@@ -1,22 +1,33 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
-import classes from './Alipede.module.css';
+import classes from './alipede.module.scss';
+import Image from 'react-bootstrap/Image';
 
-const inter = Inter({ subsets: ['latin'] });
+import ContainerItem from '@/components/ui/container-item';
 
 export default function Alipede() {
   return (
     <>
-      {/* <Head>
-        <title>igi iroko | multimedia</title>
-        <meta name="description" content="igi iroko | multimedia" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head> */}
+      <Head>
+        <title>igi iroko | A.Lipẹdé</title>
+      </Head>
       <main className={classes.main}>
-        <div className={classes.center}>
-          <h1>igi iroko | A Lipede</h1>
-        </div>
+        <ContainerItem>
+          <h1>Afolabi Lipedé</h1>
+          <p>
+            Web Developer and UI Designer, Web Graphics and Digital Arts,
+            content development, technical specification through to
+            implementation, vector shape graphics, web animation and web ad
+            banners. Responsive website design and development for all browser
+            types including mobile devices. A good understanding of W3C
+            standards, browser compatibility, usability and accessibility
+            issues.
+          </p>
+          <Image
+            className="d-block w-100"
+            src="/images/alipede/alipede-plan.png"
+            alt="alipede plan"
+          />
+        </ContainerItem>
       </main>
     </>
   );

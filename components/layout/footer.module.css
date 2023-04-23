@@ -5,28 +5,5 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  background: black;
   color: #ffffff;
-}
-
-.footer ul {
-  list-style: none;
-  display: flex;
-}
-
-.footer ul li {
-  display: inline-flex;
-  padding: 0 0.3rem;
-}
-
-.footer ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  color: #fff;
-}
-
-.footer ul li a:hover {
-  color: #ffcc00;
 }
