@@ -26,6 +26,7 @@ export default function Alipede() {
             className="d-block w-100"
             src="/images/alipede/alipede-plan.png"
             alt="alipede plan"
+            fluid
           />
         </ContainerItem>
       </main>

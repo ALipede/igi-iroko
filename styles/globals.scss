@@ -27,8 +27,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover,
+hr {
+  color: #039494;
+}
 
 .carousel-caption h3 {
+  font-size: 01rem;
   font-family: $font-orbitron;
   color: #039494 !important;
 }

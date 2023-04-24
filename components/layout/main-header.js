@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import ContactPage from '../../pages/contact';
 
 import { useRouter } from 'next/router';
 
@@ -11,7 +11,7 @@ function MainHeader() {
   return (
     <Navbar bg="light" expand="lg" variant="light" fixed="top">
       <Container fixed>
-        <Navbar.Brand href="/">igi iroko | multimedia</Navbar.Brand>
+        <Navbar.Brand href="/">igi iroko </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -45,13 +45,8 @@ function MainHeader() {
             >
               A.Lipẹdé
             </Nav.Link>
-            <Nav.Link
-              href="/contact"
-              className={router.pathname == '/contact' ? 'active' : ''}
-            >
-              Contact
-            </Nav.Link>
-            <NavDropdown title="CV" id="basic-nav-dropdown">
+            <ContactPage />
+            {/* <NavDropdown title="CV" id="basic-nav-dropdown">
               <NavDropdown.Item
                 href="https://www.linkedin.com/in/alipede/"
                 target="blank"
@@ -62,7 +57,7 @@ function MainHeader() {
               <NavDropdown.Item href="#action/3.4">
                 Download CV
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

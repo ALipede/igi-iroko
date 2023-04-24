@@ -10,6 +10,7 @@ export default function Home() {
       <main className={classes.main}>
         <div className={classes.center}>
           <h1>Web Development</h1>
+          <p>Page under contruction.</p>
         </div>
       </main>
     </>

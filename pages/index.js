@@ -10,12 +10,10 @@ export default function Home() {
     <>
       <main className={classes.main}>
         <div className={classes.center}>
-          <h1>Home</h1>
-
-          <Carousel items={homeCarousel} />
-
           <div>
             <ContainerItem>
+              <h1>Home</h1>
+              <Carousel items={homeCarousel} />
               <p>
                 igi iroko - <em>i.e; Iroko tree in Yorubà language.</em>
               </p>

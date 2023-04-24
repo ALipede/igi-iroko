@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import ContactPage from '../../pages/contact';
 
 import { useRouter } from 'next/router';
 
@@ -47,12 +48,7 @@ function Footer() {
               >
                 A.Lipẹdé
               </Nav.Link>
-              <Nav.Link
-                href="/contact"
-                className={router.pathname == '/contact' ? 'active' : ''}
-              >
-                Contact
-              </Nav.Link>
+              <ContactPage />
             </Nav>
           </Navbar.Collapse>
         </Container>

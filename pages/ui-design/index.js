@@ -10,6 +10,7 @@ export default function Alipede() {
       <main className={classes.main}>
         <div className={classes.center}>
           <h1>UI Design</h1>
+          <p>Page under contruction.</p>
         </div>
       </main>
     </>
