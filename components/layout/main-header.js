@@ -46,18 +46,6 @@ function MainHeader() {
               A.Lipẹdé
             </Nav.Link>
             <ContactPage />
-            {/* <NavDropdown title="CV" id="basic-nav-dropdown">
-              <NavDropdown.Item
-                href="https://www.linkedin.com/in/alipede/"
-                target="blank"
-              >
-                LinkedIn Profile
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Download CV
-              </NavDropdown.Item>
-            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
