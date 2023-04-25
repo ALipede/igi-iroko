@@ -48,6 +48,13 @@ const DIGITAL_ARTS_CAROUSEL = [
     description: '',
     image: '/images/digital-arts/bird-van/bird-van-007.png',
   },
+  {
+    id: 'brd8',
+    title: '',
+    alt: 'BIRD Graphics 008',
+    description: '',
+    image: '/images/digital-arts/bird-van/bird-van-008.png',
+  },
 ];
 
 export function getDigitalArtsCarousel() {
