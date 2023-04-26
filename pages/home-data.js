@@ -15,6 +15,30 @@ const HOME_CAROUSEL = [
       'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
     image: '/images/home/igi-iroko-002.png',
   },
+  {
+    id: 'img3',
+    title: 'Third slide label',
+    alt: 'image alt 3',
+    description:
+      'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+    image: '/images/home/igi-iroko-003.png',
+  },
+  {
+    id: 'img4',
+    title: 'Forth slide label',
+    alt: 'image alt 4',
+    description:
+      'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+    image: '/images/home/igi-iroko-004.png',
+  },
+  {
+    id: 'img5',
+    title: 'Fifth slide label',
+    alt: 'image alt 5',
+    description:
+      'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+    image: '/images/home/igi-iroko-005.png',
+  },
 ];
 
 export function getHomeCarousel() {

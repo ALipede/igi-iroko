@@ -25,6 +25,7 @@
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^5.2.3",
     "cssnano": "^6.0.0",
+    "file-saver": "^2.0.5",
     "next": "13.3.0",
     "next-images": "^1.8.5",
     "next-redux-wrapper": "^8.1.0",

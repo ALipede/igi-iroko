@@ -1,10 +1,4 @@
-import {
-  FaEnvelope,
-  FaMobileAlt,
-  FaLinkedin,
-  FaGithub,
-  FaDownload,
-} from 'react-icons/fa';
+import { FaEnvelope, FaMobileAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const CONTACT_LIST = [
   {
@@ -34,13 +28,6 @@ const CONTACT_LIST = [
     href: 'https://github.com/alipede',
     target: '_blank',
     icon: <FaGithub />,
-  },
-  {
-    id: 'ctl5',
-    ref: 'Download CV',
-    href: '/',
-    target: '',
-    icon: <FaDownload />,
   },
 ];
 

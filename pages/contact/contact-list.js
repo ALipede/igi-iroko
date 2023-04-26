@@ -1,6 +1,7 @@
 import ListGroup from 'react-bootstrap/ListGroup';
 import Link from 'next/link';
 import classes from './contact.module.scss';
+import DownloadCv from './download-cv';
 
 export default function ContactList(props) {
   const { items } = props;
@@ -15,6 +16,9 @@ export default function ContactList(props) {
             </Link>
           </ListGroup.Item>
         ))}
+        <ListGroup.Item>
+          <DownloadCv />
+        </ListGroup.Item>
       </ListGroup>
     </div>
   );
