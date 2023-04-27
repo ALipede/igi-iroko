@@ -27,6 +27,34 @@
       "alt": "BIRD Van 004",
       "description": "",
       "image": "/images/digital-arts/bird-van/bird-van-004.png"
+    },
+    {
+      "id": "brd5",
+      "title": "",
+      "alt": "BIRD Van 005",
+      "description": "",
+      "image": "/images/digital-arts/bird-van/bird-van-005.png"
+    },
+    {
+      "id": "brd6",
+      "title": "",
+      "alt": "BIRD Van 006",
+      "description": "",
+      "image": "/images/digital-arts/bird-van/bird-van-006.png"
+    },
+    {
+      "id": "brd7",
+      "title": "",
+      "alt": "BIRD Van 007",
+      "description": "",
+      "image": "/images/digital-arts/bird-van/bird-van-007.png"
+    },
+    {
+      "id": "brd8",
+      "title": "",
+      "alt": "BIRD Van 008",
+      "description": "",
+      "image": "/images/digital-arts/bird-van/bird-van-008.png"
     }
   ]
 }
