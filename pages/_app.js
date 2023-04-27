@@ -25,6 +25,14 @@ const MyApp = props => {
           content="igi iroko | multimedia"
           key="igi iroko | multimedia"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
       </Head>
       <SSRProvider>
         <ThemeProvider
