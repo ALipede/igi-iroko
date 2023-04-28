@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
+// import path from 'path';
+// import fs from 'fs/promises';
+
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Nav from 'react-bootstrap/Nav';
+// import { getContactList } from './contact-data';
+
+// import ContactList from './contact-list';
+// const contactList = getContactList();
+
+// import ContactNew from './contact-new';
 
 import ListGroup from 'react-bootstrap/ListGroup';
 // import Link from 'next/link';
@@ -11,6 +20,8 @@ function ContactPage() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  // const { viewinfo } = props;
 
   return (
     <>
@@ -26,6 +37,8 @@ function ContactPage() {
         </Offcanvas.Header>
 
         <Offcanvas.Body>
+          {/* <ContactList items={contactList} /> */}
+
           <ListGroup variant="flush" className={classes.list}>
             {/* {viewinfo.map(info => (
               <ListGroup.Item key={info.id}>
@@ -48,16 +61,16 @@ function ContactPage() {
   );
 }
 
-export async function getStaticProps() {
-  const infoPath = path.join(process, cwd(), 'data', 'data-contact.json');
-  const jsonData = await fs.readFile(infoPath);
-  const data = JSON.parse(jsonData);
+// export async function getStaticProps() {
+//   const infoPath = path.join(process, cwd(), 'data', 'data-contact.json');
+//   const jsonData = await fs.readFile(infoPath);
+//   const data = JSON.parse(jsonData);
 
-  return {
-    props: {
-      viewinfo: data.viewinfo,
-    },
-  };
-}
+//   return {
+//     props: {
+//       viewinfo: data.viewinfo,
+//     },
+//   };
+// }
 
 export default ContactPage;

@@ -39,7 +39,8 @@
     "reactstrap": "^9.1.9",
     "redux": "^4.2.1",
     "sass": "^1.62.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "swr": "^2.1.5"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.5",
