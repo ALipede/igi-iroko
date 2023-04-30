@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Nav from 'react-bootstrap/Nav';
-
 import ListGroup from 'react-bootstrap/ListGroup';
-// import Link from 'next/link';
 import classes from './contact.module.scss';
+
+import ContactList from './contactlist';
 import DownloadCv from './download-cv';
 
 function ContactPage() {
@@ -27,17 +27,7 @@ function ContactPage() {
 
         <Offcanvas.Body>
           <ListGroup variant="flush" className={classes.list}>
-            {/* {viewinfo.map(info => (
-              <ListGroup.Item key={info.id}>
-                <Link href={info.href} target={info.target}>
-                  <span className={classes.icons}>{info.icon}</span>
-                  {info.ref}
-                </Link>
-              </ListGroup.Item>
-            ))} */}
-
-            {/* <ContactNew /> */}
-
+            <ContactList />
             <ListGroup.Item>
               <DownloadCv />
             </ListGroup.Item>
@@ -46,18 +36,6 @@ function ContactPage() {
       </Offcanvas>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const infoPath = path.join(process, cwd(), 'data', 'data-contact.json');
-  const jsonData = await fs.readFile(infoPath);
-  const data = JSON.parse(jsonData);
-
-  return {
-    props: {
-      viewinfo: data.viewinfo,
-    },
-  };
 }
 
 export default ContactPage;
