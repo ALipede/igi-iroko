@@ -1,0 +1,32 @@
+{
+  "viewinfos": [
+    {
+      "id": "ct1",
+      "ref": "alipede@igi-iroko.com",
+      "address": "mailto:alipede@igi-iroko.com?subject=igi iroko | Web Development&body=igi iroko : Contact - A.Lipede",
+      "target": "",
+      "icon": ""
+    },
+    {
+      "id": "ct2",
+      "ref": "+4407830350762",
+      "address": "tel:+4407830350763",
+      "target": "",
+      "icon": ""
+    },
+    {
+      "id": "ct3",
+      "ref": "LinkedIn/alipede",
+      "address": "https://www.linkedin.com/in/alipede/",
+      "target": "_blank",
+      "icon": ""
+    },
+    {
+      "id": "ct4",
+      "ref": "GitHub/alipede",
+      "address": "https://github.com/alipede",
+      "target": "_blank",
+      "icon": ""
+    }
+  ]
+}

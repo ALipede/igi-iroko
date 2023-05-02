@@ -2,6 +2,7 @@ import * as React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import createEmotionCache from '../utility/createEmotionCache';
+import { getInitColorSchemeScript } from '@mui/material/styles';
 
 export default class MyDocument extends Document {
   render() {
@@ -9,6 +10,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head />
         <body>
+          {getInitColorSchemeScript()}
           <Main />
           <NextScript />
         </body>

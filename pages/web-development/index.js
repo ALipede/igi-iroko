@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import classes from './web-development.module.scss';
+import ContainerItem from '@/components/ui/container-item';
+import WebDevelopment from './web-development';
 
 export default function Home() {
   return (
@@ -8,10 +10,11 @@ export default function Home() {
         <title>igi iroko | Web Development</title>
       </Head>
       <main className={classes.main}>
-        <div className={classes.center}>
-          <h1>Web Development</h1>
+        <h1>Web Development</h1>
+        <ContainerItem>
           <p>Page under contruction.</p>
-        </div>
+          <WebDevelopment />
+        </ContainerItem>
       </main>
     </>
   );

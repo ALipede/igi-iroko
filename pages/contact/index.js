@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Nav from 'react-bootstrap/Nav';
-import { getContactList } from './contact-data';
+import ListGroup from 'react-bootstrap/ListGroup';
+import classes from './contact.module.scss';
 
-import ContactList from './contact-list';
-const contactList = getContactList();
+import ContactList from './contactlist';
+import DownloadCv from './download-cv';
 
 function ContactPage() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -24,8 +24,14 @@ function ContactPage() {
             <h1>Contact</h1>
           </Offcanvas.Title>
         </Offcanvas.Header>
+
         <Offcanvas.Body>
-          <ContactList items={contactList} />
+          <ListGroup variant="flush" className={classes.list}>
+            <ContactList />
+            <ListGroup.Item>
+              <DownloadCv />
+            </ListGroup.Item>
+          </ListGroup>
         </Offcanvas.Body>
       </Offcanvas>
     </>

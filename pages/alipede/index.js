@@ -11,8 +11,8 @@ export default function Alipede() {
         <title>igi iroko | A.Lipẹdé</title>
       </Head>
       <main className={classes.main}>
+        <h1>Afolabi Lipedé</h1>
         <ContainerItem>
-          <h1>Afolabi Lipedé</h1>
           <p>
             Web Developer and UI Designer, Web Graphics and Digital Arts,
             content development, technical specification through to
