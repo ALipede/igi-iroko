@@ -2,19 +2,23 @@
 
 $font-orbitron: 'Orbitron', sans-serif;
 $font-roboto: 'Roboto', sans-serif;
+$page-green: #039494;
+$page-dark-grey: #666;
+$page-yellow: #fc0;
+$border-lines: #ddd;
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 100% $font-roboto;
-  color: #666;
+  color: $page-dark-grey;
 }
 
 h1 {
   font-family: $font-orbitron;
-  margin: 1rem 0;
-  color: #039494;
+  margin: 1rem 0 0 0;
+  color: $page-green;
   font-size: 1.7rem !important;
 }
 
@@ -29,38 +33,44 @@ a {
 }
 a:hover,
 hr {
-  color: #039494;
+  color: $page-green;
 }
 
 .carousel-caption h3 {
   font-size: 01rem;
   font-family: $font-orbitron;
-  color: #039494 !important;
+  color: $page-green !important;
 }
 
 .carousel {
-  background-image: linear-gradient(#ddd 1px, transparent 1px),
-    linear-gradient(90deg, #ddd 1px, transparent 1px);
+  background-image: linear-gradient($border-lines 1px, transparent 1px),
+    linear-gradient(90deg, $border-lines 1px, transparent 1px);
   background-size: 20px 20px;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-right: 1px solid $border-lines;
+  border-bottom: 1px solid $border-lines;
   margin-bottom: 1.5rem;
 }
 
-.carousel-caption h3,
-.carousel-caption p {
-  color: #666;
+.carousel-caption {
+  h3,
+  p {
+    color: $page-dark-grey;
+  }
 }
 
 .carousel-indicators [data-bs-target] {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #fc0;
+  background-color: $page-yellow;
 }
 
 .container-md {
   padding: 1.5rem 0;
+}
+.MuiTableCell-head svg {
+  font-size: 1.4em;
+  color: $page-green;
 }
 
 * {

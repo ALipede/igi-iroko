@@ -15,41 +15,38 @@ function Home(props) {
         <title>igi iroko | Home</title>
       </Head>
       <main className={classes.main}>
-        <div className={classes.center}>
-          <ContainerItem>
-            <h1>Home</h1>
+        <h1>Home</h1>
+        <ContainerItem>
+          <Carousel>
+            {imgviews.map(imgview => (
+              <Carousel.Item key={imgview.id}>
+                <Image
+                  className="d-block w-100"
+                  src={imgview.image}
+                  alt={imgview.alt}
+                />
+                <Carousel.Caption>
+                  <h3>{imgview.title}</h3>
+                  <p>{imgview.description}</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))}
+          </Carousel>
 
-            <Carousel>
-              {imgviews.map(imgview => (
-                <Carousel.Item key={imgview.id}>
-                  <Image
-                    className="d-block w-100"
-                    src={imgview.image}
-                    alt={imgview.alt}
-                  />
-                  <Carousel.Caption>
-                    <h3>{imgview.title}</h3>
-                    <p>{imgview.description}</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              ))}
-            </Carousel>
-
-            <p>
-              igi iroko - <em>i.e; Iroko tree in Yorubà language.</em>
-            </p>
-            <p>
-              The internet is an information highway. It is like an interactive
-              TV station where everybody can present information about what they
-              do and where to find them. The internet is a fast and easy way to
-              communicate, integrate and advertise imgviews, ideas & concepts of
-              all kinds. Which makes owning a web site like owning a
-              broadcasting channel. The whole idea is to make your web site a 24
-              hour channel for you and your site visitors.
-            </p>
-            <p>Afọlabi Lipẹdé</p>
-          </ContainerItem>
-        </div>
+          <p>
+            igi iroko - <em>i.e; Iroko tree in Yorubà language.</em>
+          </p>
+          <p>
+            The internet is an information highway. It is like an interactive TV
+            station where everybody can present information about what they do
+            and where to find them. The internet is a fast and easy way to
+            communicate, integrate and advertise imgviews, ideas & concepts of
+            all kinds. Which makes owning a web site like owning a broadcasting
+            channel. The whole idea is to make your web site a 24 hour channel
+            for you and your site visitors.
+          </p>
+          <p>Afọlabi Lipẹdé</p>
+        </ContainerItem>
       </main>
     </>
   );

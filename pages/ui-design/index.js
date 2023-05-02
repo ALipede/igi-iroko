@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import classes from './ui-design.module.scss';
+import ContainerItem from '@/components/ui/container-item';
 
 export default function Alipede() {
   return (
@@ -8,10 +9,10 @@ export default function Alipede() {
         <title>igi iroko | UI Design</title>
       </Head>
       <main className={classes.main}>
-        <div className={classes.center}>
-          <h1>UI Design</h1>
+        <h1>UI Design</h1>
+        <ContainerItem>
           <p>Page under contruction.</p>
-        </div>
+        </ContainerItem>
       </main>
     </>
   );

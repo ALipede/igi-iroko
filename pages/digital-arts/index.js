@@ -16,28 +16,25 @@ function DigitalArts(props) {
       </Head>
 
       <main className={classes.main}>
-        <div className={classes.center}>
-          <ContainerItem>
-            <h1>Digital Arts</h1>
-
-            <Carousel>
-              {imgviews.map(imgview => (
-                <Carousel.Item key={imgview.id}>
-                  <Image
-                    className="d-block w-100"
-                    src={imgview.image}
-                    alt={imgview.alt}
-                  />
-                  <Carousel.Caption>
-                    <h3>{imgview.title}</h3>
-                    <p>{imgview.description}</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              ))}
-            </Carousel>
-            <p>Page under construction.</p>
-          </ContainerItem>
-        </div>
+        <h1>Digital Arts</h1>
+        <ContainerItem>
+          <p>Page under construction.</p>
+          <Carousel>
+            {imgviews.map(imgview => (
+              <Carousel.Item key={imgview.id}>
+                <Image
+                  className="d-block w-100"
+                  src={imgview.image}
+                  alt={imgview.alt}
+                />
+                <Carousel.Caption>
+                  <h3>{imgview.title}</h3>
+                  <p>{imgview.description}</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </ContainerItem>
       </main>
     </>
   );
