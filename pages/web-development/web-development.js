@@ -44,20 +44,20 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 function WebDevelopment() {
   const rows = [
-    {
-      id: 'url1',
-      name: 'christopher-rushbrooke.com',
-      urls: '',
-      html5: <FaPlus />,
-      css3: <FaPlus />,
-      reactjs: <FaPlus />,
-      nextjs: <FaMinus />,
-      sass: <FaMinus />,
-      less: <FaPlus />,
-      php: <FaPlus />,
-      bootstrap: <FaPlus />,
-      wordpress: <FaMinus />,
-    },
+    // {
+    //   id: 'url1',
+    //   name: 'christopher-rushbrooke.com',
+    //   urls: '',
+    //   html5: <FaPlus />,
+    //   css3: <FaPlus />,
+    //   reactjs: <FaPlus />,
+    //   nextjs: <FaMinus />,
+    //   sass: <FaMinus />,
+    //   less: <FaPlus />,
+    //   php: <FaPlus />,
+    //   bootstrap: <FaPlus />,
+    //   wordpress: <FaMinus />,
+    // },
     {
       id: 'url2',
       name: 'afunja.com',
@@ -141,7 +141,6 @@ function WebDevelopment() {
                   <StyledTableCell align="right">{row.css3}</StyledTableCell>
                   <StyledTableCell align="right">{row.reactjs}</StyledTableCell>
                   <StyledTableCell align="right">{row.nextjs}</StyledTableCell>
-
                   <StyledTableCell align="right">{row.sass}</StyledTableCell>
                   <StyledTableCell align="right">{row.less}</StyledTableCell>
                   <StyledTableCell align="right">{row.php}</StyledTableCell>
