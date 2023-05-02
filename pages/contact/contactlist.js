@@ -4,7 +4,7 @@ import classes from './contact.module.scss';
 import { FaEnvelope, FaMobileAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function ContactList() {
-  const viewinfos = [
+  const contactinfos = [
     {
       id: 'ct1',
       ref: 'alipede@igi-iroko.com',
@@ -38,11 +38,11 @@ function ContactList() {
 
   return (
     <>
-      {viewinfos.map(viewinfo => (
-        <ListGroup.Item key={viewinfo.id}>
-          <Link href={viewinfo.address} target={viewinfo.target}>
-            <span className={classes.icons}>{viewinfo.icon}</span>
-            {viewinfo.ref}
+      {contactinfos.map(contactinfo => (
+        <ListGroup.Item key={contactinfo.id}>
+          <Link href={contactinfo.address} target={contactinfo.target}>
+            <span className={classes.icons}>{contactinfo.icon}</span>
+            {contactinfo.ref}
           </Link>
         </ListGroup.Item>
       ))}

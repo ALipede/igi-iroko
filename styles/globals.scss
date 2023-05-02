@@ -17,7 +17,7 @@ body {
 
 h1 {
   font-family: $font-orbitron;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0 1rem;
   color: $page-green;
   font-size: 1.7rem !important;
 }
@@ -27,11 +27,16 @@ p {
   font-weight: 300;
 }
 
-a {
+a,
+.list-group-item {
   color: inherit;
   text-decoration: none;
+  a:hover,
+  .list-group-item:hover {
+    color: $page-green !important;
+  }
 }
-a:hover,
+
 hr {
   color: $page-green;
 }
