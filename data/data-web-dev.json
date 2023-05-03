@@ -1,0 +1,32 @@
+{
+  "webdevelopment": [
+    {
+      "id": "url1",
+      "name": "afunja.com",
+      "urls": "https://afunja.com",
+      "html5": "+",
+      "css3": "+",
+      "reactjs": "+",
+      "nextjs": "-",
+      "sass": "-",
+      "less": "+",
+      "php": "-",
+      "bootstrap": "+",
+      "wordpress": "+"
+    },
+    {
+      "id": "url2",
+      "name": "coacoseal.com",
+      "urls": "http://coacoseal.com",
+      "html5": "+",
+      "css3": "+",
+      "reactjs": "+",
+      "nextjs": "-",
+      "sass": "-",
+      "less": "+",
+      "php": "-",
+      "bootstrap": "+",
+      "wordpress": "+"
+    }
+  ]
+}

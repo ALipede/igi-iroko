@@ -1,13 +1,15 @@
 $page-green: #039494;
+$page-dark-grey: #666;
 
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .icons {
   line-height: 14px;
-  margin-right: 8px;
+  margin-right: 10px;
   top: -2px;
   color: $page-green;
   position: relative;
@@ -18,8 +20,9 @@ $page-green: #039494;
   background: none !important;
   margin: 0;
   padding: 0;
+  color: $page-dark-grey;
 }
 
 .cvbtn:hover {
-  color: #039494;
+  color: $page-green;
 }

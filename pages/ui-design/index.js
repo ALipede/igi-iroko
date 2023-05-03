@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import classes from './ui-design.module.scss';
-import ContainerItem from '@/components/ui/container-item';
+import ContainerItem from '../../components/ui/container-item';
 
-export default function Alipede() {
+export default function UiDesignPage() {
   return (
     <>
       <Head>

@@ -1,8 +1,5 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
 import classes from './404.module.scss';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function page404() {
   return (

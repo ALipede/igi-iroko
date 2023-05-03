@@ -2,9 +2,9 @@ import Head from 'next/head';
 import classes from './alipede.module.scss';
 import Image from 'react-bootstrap/Image';
 
-import ContainerItem from '@/components/ui/container-item';
+import ContainerItem from '../../components/ui/container-item';
 
-export default function Alipede() {
+export default function AipedePage() {
   return (
     <>
       <Head>

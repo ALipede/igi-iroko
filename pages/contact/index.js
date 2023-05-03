@@ -24,10 +24,11 @@ function ContactPage() {
             <h1>Contact</h1>
           </Offcanvas.Title>
         </Offcanvas.Header>
-        <hr />
+
         <Offcanvas.Body>
           <ListGroup variant="flush" className={classes.list}>
             <ContactList />
+
             <ListGroup.Item>
               <DownloadCv />
             </ListGroup.Item>

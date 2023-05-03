@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { Header } from './Header';
-import './page.css';
+import './igiiroko.css';
 
-export const Page = () => {
+export const IgiIroko = () => {
   const [user, setUser] = React.useState();
 
   return (
@@ -16,7 +16,7 @@ export const Page = () => {
       />
 
       <section>
-        <h2>Pages in Storybook</h2>
+        <h2>igi iroko in Storybook</h2>
         <p>
           We recommend building UIs with a{' '}
           <a

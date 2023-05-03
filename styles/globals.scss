@@ -6,6 +6,7 @@ $page-green: #039494;
 $page-dark-grey: #666;
 $page-yellow: #fc0;
 $border-lines: #ddd;
+$page-light-green: #45c7c7;
 
 html,
 body {
@@ -73,9 +74,10 @@ hr {
 .container-md {
   padding: 1.5rem 0;
 }
+
 .MuiTableCell-head svg {
-  font-size: 1.4em;
-  color: $page-green;
+  font-size: 1.5em;
+  color: $page-light-green;
 }
 
 * {

@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import path from 'path';
 import fs from 'fs/promises';
-import classes from '@/styles/home.module.scss';
-import ContainerItem from '@/components/ui/container-item';
+import classes from './digital-arts.module.scss';
+import ContainerItem from '../../components/ui/container-item';
 import { Carousel } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
-function DigitalArts(props) {
+function DigitalArtsPage(props) {
   const { imgviews } = props;
 
   return (
@@ -52,4 +52,4 @@ export async function getStaticProps() {
   };
 }
 
-export default DigitalArts;
+export default DigitalArtsPage;

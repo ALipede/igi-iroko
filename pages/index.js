@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import path from 'path';
 import fs from 'fs/promises';
-import classes from '@/styles/home.module.scss';
-import ContainerItem from '@/components/ui/container-item';
+import classes from '../styles/home.module.scss';
+import ContainerItem from '../components/ui/container-item';
 import { Carousel } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
@@ -15,7 +15,7 @@ function Home(props) {
         <title>igi iroko | Home</title>
       </Head>
       <main className={classes.main}>
-        <h1>Home</h1>
+        <h1>Home New</h1>
         <ContainerItem>
           <Carousel>
             {imgviews.map(imgview => (
