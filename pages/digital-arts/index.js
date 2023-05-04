@@ -18,7 +18,6 @@ function DigitalArtsPage(props) {
       <main className={classes.main}>
         <h1>Digital Arts</h1>
         <ContainerItem>
-          <p>Page under construction.</p>
           <Carousel>
             {imgviews.map(imgview => (
               <Carousel.Item key={imgview.id}>
@@ -34,6 +33,7 @@ function DigitalArtsPage(props) {
               </Carousel.Item>
             ))}
           </Carousel>
+          <p>Page under construction.</p>
         </ContainerItem>
       </main>
     </>

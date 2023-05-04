@@ -15,7 +15,7 @@ function Home(props) {
         <title>igi iroko | Home</title>
       </Head>
       <main className={classes.main}>
-        <h1>Home New</h1>
+        <h1>Home</h1>
         <ContainerItem>
           <Carousel>
             {imgviews.map(imgview => (
