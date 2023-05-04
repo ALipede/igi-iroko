@@ -13,6 +13,7 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+
 import {
   FaHtml5,
   FaPhp,
@@ -25,6 +26,7 @@ import {
   // FaMinus,
   // FaPlus,
 } from 'react-icons/fa';
+import { RiExternalLinkLine } from 'react-icons/ri';
 // NextJs icon
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -101,7 +103,14 @@ function WeDevelopmentPage(props) {
                       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                       <StyledTableCell component="th" scope="row">
-                        <Link href={webdev.urls} target="_blank">
+                        <span className={classes.exlink}>
+                          <RiExternalLinkLine />
+                        </span>
+                        <Link
+                          href={webdev.urls}
+                          target="_blank"
+                          className={classes.link}
+                        >
                           {webdev.name}
                         </Link>
                       </StyledTableCell>

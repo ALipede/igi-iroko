@@ -5,6 +5,28 @@ const config = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
+    '@storybook/preset-scss',
+    // '@storybook/addon-essentials',
+    '@storybook/addon-styling',
+    {
+      name: '@storybook/preset-scss',
+      options: {
+        cssLoaderOptions: {
+          modules: { localIdentName: '[name]__[local]--[hash:base64:5]' },
+        },
+      },
+    },
+    // '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        sass: {
+          // Require your Sass preprocessor here
+          implementation: require('sass'),
+        },
+      },
+    },
   ],
   framework: {
     name: '@storybook/nextjs',

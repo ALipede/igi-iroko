@@ -40,7 +40,7 @@ function ContactList() {
     <>
       {viewinfos.map(viewinfo => (
         <ListGroup.Item key={viewinfo.id}>
-          <Link href={viewinfo.address} target={viewinfo.target}>
+          <Link href={viewinfo.address} target={viewinfo.target} passHref>
             <span className={classes.icons}>{viewinfo.icon}</span>
             {viewinfo.ref}
           </Link>
