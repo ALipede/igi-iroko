@@ -20,7 +20,7 @@ function ContactPage() {
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>
+          <Offcanvas.Title className={classes.title}>
             <h1>Contact</h1>
           </Offcanvas.Title>
         </Offcanvas.Header>
