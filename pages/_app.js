@@ -25,6 +25,10 @@ const MyApp = props => {
           content="igi iroko | multimedia"
           key="igi iroko | multimedia"
         />
+        <meta
+          property="description"
+          content="igi iroko website. Afolabi Lipede - Frontend Web Designer & Developer"
+        />
       </Head>
       <SSRProvider>
         <ThemeProvider

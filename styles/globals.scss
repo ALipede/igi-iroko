@@ -3,10 +3,11 @@
 $font-orbitron: 'Orbitron', sans-serif;
 $font-roboto: 'Roboto', sans-serif;
 $page-green: #039494;
+$page-light-green: #6fbbbb;
+$page-pale-green: #eee;
 $page-dark-grey: #666;
 $page-yellow: #fc0;
 $border-lines: #ddd;
-$page-light-green: #45c7c7;
 
 html,
 body {
@@ -22,7 +23,12 @@ h1 {
   color: $page-green;
   font-size: 1.7rem !important;
 }
-
+h2.heading {
+  font-family: $font-orbitron;
+  margin: 0 0 0 1rem;
+  color: $page-green;
+  font-size: 1.3rem !important;
+}
 p {
   font-size: 0.8rem;
   font-weight: 300;
@@ -83,3 +89,11 @@ hr {
 * {
   box-sizing: border-box;
 }
+
+.accordion-button:not(.collapsed) {
+  background-color: $page-pale-green;
+  color: $page-green;
+}
+// .accordion-button:not(.collapsed)::after {
+//   background-image: $page-pale-green;
+// }

@@ -1,3 +1,5 @@
+import path from 'path';
+import fs from 'fs/promises';
 import Head from 'next/head';
 import Link from 'next/link';
 import classes from './web-development.module.scss';
@@ -27,7 +29,6 @@ import {
 import { RiExternalLinkLine } from 'react-icons/ri';
 // NextJs icon
 import { TbBrandNextjs } from 'react-icons/tb';
-import { useEffect, useState } from 'react';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -50,18 +51,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 function WeDevelopmentPage(props) {
-  const [dataResponse, setDataResponse] = useState([]);
-
-  useEffect(() => {
-    async function getPageData() {
-      const apiUrlEndpoint = 'http://localhost:3000/api/data-webdev';
-      const response = await fetch(apiUrlEndpoint);
-      const res = await response.json();
-      console.log(res.projects);
-      setDataResponse(res.projects);
-    }
-    getPageData();
-  }, []);
+  const { webdevelopment } = props;
 
   return (
     <>
@@ -107,56 +97,52 @@ function WeDevelopmentPage(props) {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {dataResponse.map(project => {
-                    return (
-                      <StyledTableRow
-                        key={project.key}
-                        sx={{
-                          '&:last-child td, &:last-child th': { border: 0 },
-                        }}
-                      >
-                        <StyledTableCell component="th" scope="row">
-                          <span className={classes.exlink}>
-                            <RiExternalLinkLine />
-                          </span>
-                          <Link
-                            href={project.address}
-                            target="_blank"
-                            className={classes.link}
-                          >
-                            {project.title}
-                          </Link>
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.html5}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.css3}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.rjs}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.njs}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.sass}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.less}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.php}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.bstrap}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {project.wpress}
-                        </StyledTableCell>
-                      </StyledTableRow>
-                    );
-                  })}
+                  {webdevelopment.map(webdev => (
+                    <StyledTableRow
+                      key={webdev.id}
+                      sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                    >
+                      <StyledTableCell component="th" scope="row">
+                        <span className={classes.exlink}>
+                          <RiExternalLinkLine />
+                        </span>
+                        <Link
+                          href={webdev.urls}
+                          target="_blank"
+                          className={classes.link}
+                        >
+                          {webdev.name}
+                        </Link>
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.html5}
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.css3}
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.reactjs}
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.nextjs}
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.sass}
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.less}
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.php}
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.bootstrap}
+                      </StyledTableCell>
+                      <StyledTableCell align="right">
+                        {webdev.wordpress}
+                      </StyledTableCell>
+                    </StyledTableRow>
+                  ))}
                 </TableBody>
               </Table>
             </TableContainer>
@@ -168,6 +154,18 @@ function WeDevelopmentPage(props) {
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'data', 'data-web-dev.json');
+  const jsonData = await fs.readFile(filePath);
+  const data = JSON.parse(jsonData);
+
+  return {
+    props: {
+      webdevelopment: data.webdevelopment,
+    },
+  };
 }
 
 export default WeDevelopmentPage;

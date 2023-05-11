@@ -4,7 +4,7 @@ import { FaDownload } from 'react-icons/fa';
 
 export default function DownloadCv() {
   const saveFile = () => {
-    saveAs('/download/CV_Afolabi_Lipede.pdf', 'CV_Afolabi_Lipede.pdf');
+    saveAs('/download/Afolabi_Lipede_CV.pdf', 'Afolabi_Lipede_CV.pdf');
   };
   return (
     <div>

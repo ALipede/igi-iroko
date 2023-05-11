@@ -27,12 +27,12 @@ function MainHeader() {
             >
               Web Development
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               href="/ui-design"
               className={router.pathname == '/ui-design' ? 'active' : ''}
             >
               UI Design
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               href="/digital-arts"
               className={router.pathname == '/digital-arts' ? 'active' : ''}

@@ -20,11 +20,11 @@
       "urls": "http://coacoseal.com",
       "html5": "+",
       "css3": "+",
-      "reactjs": "+",
+      "reactjs": "-",
       "nextjs": "-",
       "sass": "-",
       "less": "+",
-      "php": "-",
+      "php": "+",
       "bootstrap": "+",
       "wordpress": "-"
     }
