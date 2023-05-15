@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   });
 
   try {
-    const query = 'SELECT id, iconsrc, iconalt, title, icontxt FROM icons_one';
+    const query = 'SELECT id, iconsrc, iconalt, title, icontxt FROM icons_mob';
     const values = [];
     const [data] = await dbconnection.execute(query, values);
     dbconnection.end();

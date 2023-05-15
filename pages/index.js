@@ -1,38 +1,19 @@
 import Head from 'next/head';
-import path from 'path';
-import fs from 'fs/promises';
 import classes from '../styles/home.module.scss';
 import ContainerItem from '../components/ui/container-item';
-import { Carousel } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image';
 
-function Home(props) {
-  const { imgviews } = props;
+import CarouselHome from './carousel-home';
 
+function Home() {
   return (
     <>
       <Head>
         <title>igi iroko | Home</title>
       </Head>
       <main className={classes.main}>
-        <h1>Home</h1>
+        <h1>Home 004</h1>
         <ContainerItem>
-          <Carousel>
-            {imgviews.map(imgview => (
-              <Carousel.Item key={imgview.id}>
-                <Image
-                  className="d-block w-100"
-                  src={imgview.image}
-                  alt={imgview.alt}
-                />
-                <Carousel.Caption>
-                  <h3>{imgview.title}</h3>
-                  <p>{imgview.description}</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-
+          <CarouselHome />
           <p>
             igi iroko - <em>i.e; Iroko tree in Yorubà language.</em>
           </p>
@@ -50,18 +31,6 @@ function Home(props) {
       </main>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'data', 'data-home.json');
-  const jsonData = await fs.readFile(filePath);
-  const data = JSON.parse(jsonData);
-
-  return {
-    props: {
-      imgviews: data.imgviews,
-    },
-  };
 }
 
 export default Home;

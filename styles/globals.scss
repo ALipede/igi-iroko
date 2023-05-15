@@ -21,13 +21,13 @@ h1 {
   font-family: $font-orbitron;
   margin: 1rem 0 0 1rem;
   color: $page-green;
-  font-size: 1.7rem !important;
+  font-size: 2rem !important;
 }
-h2.heading {
+h2 {
   font-family: $font-orbitron;
-  margin: 0 0 0 1rem;
+  // margin: 0 0 0 1rem;
   color: $page-green;
-  font-size: 1.3rem !important;
+  font-size: 1.4rem !important;
 }
 p {
   font-size: 0.8rem;
@@ -94,6 +94,3 @@ hr {
   background-color: $page-pale-green;
   color: $page-green;
 }
-// .accordion-button:not(.collapsed)::after {
-//   background-image: $page-pale-green;
-// }

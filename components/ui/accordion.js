@@ -22,9 +22,9 @@ function AccordionList(props) {
         <AccordionHeader targetId="1">UI Design</AccordionHeader>
         <AccordionBody accordionId="1">
           <p>
-            <strong>This is the first item's accordion body.</strong>
+            <strong>This is the first item accordion body.</strong>
             You can modify any of this with custom CSS or overriding our default
-            variables. It's also worth noting that just about any HTML can go
+            variables. It is also worth noting that just about any HTML can go
             within the.accordion-body, though the transition does limit
             overflow.
           </p>
@@ -34,9 +34,9 @@ function AccordionList(props) {
         <AccordionHeader targetId="2">Heading 2</AccordionHeader>
         <AccordionBody accordionId="2">
           <p>
-            <strong>This is the second item's accordion body.</strong>
+            <strong>This is the second item accordion body.</strong>
             You can modify any of this with custom CSS or overriding our default
-            variables. It's also worth noting that just about any HTML can go
+            variables. It is also worth noting that just about any HTML can go
             within the.accordion-body, though the transition does limit
             overflow.
           </p>
@@ -46,9 +46,9 @@ function AccordionList(props) {
         <AccordionHeader targetId="3">Heading 3</AccordionHeader>
         <AccordionBody accordionId="3">
           <p>
-            <strong>This is the third item's accordion body.</strong>
+            <strong>This is the third item accordion body.</strong>
             You can modify any of this with custom CSS or overriding our default
-            variables. It's also worth noting that just about any HTML can go
+            variables. It is also worth noting that just about any HTML can go
             within the .accordion-body, though the transition does limit
             overflow.
           </p>
@@ -58,9 +58,9 @@ function AccordionList(props) {
         <AccordionHeader targetId="4">Heading</AccordionHeader>
         <AccordionBody accordionId="4">
           <p>
-            <strong>This is the third item's accordion body.</strong>
+            <strong>This is the third item accordion body.</strong>
             You can modify any of this with custom CSS or overriding our default
-            variables. It's also worth noting that just about any HTML can go
+            variables. It is also worth noting that just about any HTML can go
             within the .accordion-body, though the transition does limit
             overflow.
           </p>
