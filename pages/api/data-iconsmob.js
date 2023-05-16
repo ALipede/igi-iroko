@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     database: 'icons_set',
     port: 3306,
     user: 'root',
-    password: '<-- PASSWORD -->',
+    password: 'j0j01ss1#MySQL',
     socketPath: '/tmp/mysql.sock',
   });
 
