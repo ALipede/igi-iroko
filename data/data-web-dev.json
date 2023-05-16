@@ -2,8 +2,8 @@
   "webdevelopment": [
     {
       "id": "url1",
-      "name": "afunja.com",
-      "urls": "https://afunja.com",
+      "name": "_",
+      "urls": "_",
       "html5": "+",
       "css3": "+",
       "reactjs": "+",
@@ -16,8 +16,8 @@
     },
     {
       "id": "url2",
-      "name": "coacoseal.com",
-      "urls": "http://coacoseal.com",
+      "name": "_",
+      "urls": "_",
       "html5": "+",
       "css3": "+",
       "reactjs": "-",
