@@ -1,4 +1,5 @@
-// @import './icons.module.scss';
+$page-green: #039494;
+$page-black: #333;
 
 .container {
   padding: 0 2rem;
@@ -15,23 +16,36 @@
 .iconsTable {
   max-width: 500px;
   display: flex;
+  td {
+    width: 50px;
+    max-width: 50px;
+    margin: 0.25rem;
+    height: 50px;
+    max-height: 50px;
+    display: inline-table;
+    img {
+      width: 50px;
+      height: 50px;
+      display: inline-table;
+      border: 1px solid #aaa;
+    }
+  }
 }
 
-.iconsTable td {
-  width: 50px;
-  max-width: 50px;
-  margin: 0.25rem;
-  height: 50px;
-  max-height: 50px;
+.iconsTr {
+  width: 100%;
   display: inline-table;
-  // border: 1px solid #ddd;
+  td.iconsTr_Td {
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    // display: inline-flex;
+  }
 }
 
-.iconsTable td img {
-  width: 50px;
-  height: 50px;
-  display: inline-table;
-  border: 1px solid #aaa;
+.imgBorder {
+  border: 2px solid $page-black;
+  display: block;
 }
 
 .iconBtn {

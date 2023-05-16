@@ -27,6 +27,7 @@
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-scroll-parallax": "^3.4.2",
     "reactstrap": "^9.1.9",
     "swr": "^2.1.5"
   },

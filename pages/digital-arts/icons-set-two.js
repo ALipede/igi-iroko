@@ -3,7 +3,7 @@ import { Table } from 'reactstrap';
 import classes from './digital-arts.module.scss';
 import Image from 'react-bootstrap/Image';
 
-function IconsSetTwo(args) {
+function IconsSetTwo() {
   const [dataResponse, setDataResponse] = useState([]);
 
   useEffect(() => {
@@ -18,10 +18,7 @@ function IconsSetTwo(args) {
 
   return (
     <>
-      <h2>ICONS 002</h2>
-      <p>
-        Click on icons to <em>view:</em>
-      </p>
+      <h2>Icons 002</h2>
       <Table responsive className={classes.iconsTable}>
         <tbody>
           <tr>

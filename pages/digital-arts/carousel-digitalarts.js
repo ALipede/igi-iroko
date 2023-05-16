@@ -18,6 +18,7 @@ function CarouselDigitalArts() {
 
   return (
     <>
+      <h2>BIRD &copy; Graphics</h2>
       <Carousel>
         {dataResponse.map(carousels => {
           return (
@@ -28,13 +29,12 @@ function CarouselDigitalArts() {
                 alt={carousels.alt}
               />
               <Carousel.Caption>
-                <h3>{carousels.title}</h3>
-                <p>{carousels.description}</p>
+                <h5>{carousels.title}</h5>
               </Carousel.Caption>
             </Carousel.Item>
           );
         })}
-      </Carousel>
+      </Carousel>{' '}
     </>
   );
 }

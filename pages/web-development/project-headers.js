@@ -32,31 +32,31 @@ function ProjectHeaders() {
       <TableHead>
         <TableRow hover>
           <StyledTableCell>Project URLs:</StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <FaHtml5 />
           </StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <FaCss3 />
           </StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <FaReact />
           </StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <TbBrandNextjs />
           </StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <FaSass />
           </StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <FaLess />
           </StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <FaPhp />
           </StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <FaBootstrap />
           </StyledTableCell>
-          <StyledTableCell align="right">
+          <StyledTableCell align="center">
             <FaWordpress />
           </StyledTableCell>
         </TableRow>

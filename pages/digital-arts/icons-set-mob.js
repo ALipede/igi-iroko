@@ -3,7 +3,7 @@ import { Table } from 'reactstrap';
 import classes from './digital-arts.module.scss';
 import Image from 'react-bootstrap/Image';
 
-function IconsSetMob(args) {
+function IconsSetMob() {
   const [dataResponse, setDataResponse] = useState([]);
 
   useEffect(() => {
@@ -19,9 +19,6 @@ function IconsSetMob(args) {
   return (
     <>
       <h2>Myth of Being</h2>
-      <p>
-        Click on icons to <em>view:</em>
-      </p>
       <Table responsive className={classes.iconsTable}>
         <tbody>
           <tr>
