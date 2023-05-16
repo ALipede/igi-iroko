@@ -3,7 +3,7 @@ import mysql from 'mysql2/promise';
 export default async function handler(req, res) {
   const dbconnection = await mysql.createConnection({
     host: 'localhost',
-    database: 'icons_set',
+    database: '<--DATABASE-->',
     port: 3306,
     user: 'root',
     password: '<--PASSWORD-->',
