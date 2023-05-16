@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     database: 'web_development',
     port: 3306,
     user: 'root',
-    password: 'j0j01ss1#MySQL',
+    password: '<-- PASSWORD -->',
     socketPath: '/tmp/mysql.sock',
   });
 
