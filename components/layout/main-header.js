@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ContactPage from '../../pages/contact';
-
 import { useRouter } from 'next/router';
 
 function MainHeader() {
@@ -26,12 +25,6 @@ function MainHeader() {
               className={router.pathname == '/web-development' ? 'active' : ''}
             >
               Web Development
-            </Nav.Link>
-            <Nav.Link
-              href="/ui-design"
-              className={router.pathname == '/ui-design' ? 'active' : ''}
-            >
-              UI Design
             </Nav.Link>
             <Nav.Link
               href="/digital-arts"

@@ -1,5 +1,33 @@
+$page-green: #039494;
+$page-dark-grey: #666;
+
+.title {
+  margin-top: 48px;
+  margin-left: 1rem;
+}
+
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.icons {
+  line-height: 14px;
+  margin-right: 10px;
+  top: -2px;
+  color: $page-green;
+  position: relative;
+}
+
+.cvbtn {
+  border: none;
+  background: none !important;
+  margin: 0;
+  padding: 0;
+  text-indent: -2px;
+  color: $page-dark-grey;
+  &:hover {
+    color: $page-green;
+  }
 }

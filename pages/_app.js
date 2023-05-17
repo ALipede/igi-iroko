@@ -9,7 +9,7 @@ import Head from 'next/head';
 import createEmotionCache from '../utility/createEmotionCache';
 import '../styles/globals.scss';
 
-import Layout from '@/components/layout/layout';
+import Layout from '../components/layout/layout';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -24,6 +24,10 @@ const MyApp = props => {
           property="og:title"
           content="igi iroko | multimedia"
           key="igi iroko | multimedia"
+        />
+        <meta
+          property="description"
+          content="igi iroko website. Afolabi Lipede - Frontend Web Designer & Developer"
         />
       </Head>
       <SSRProvider>

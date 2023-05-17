@@ -1,11 +1,45 @@
+$page-green: #039494;
+$border-lines: #ddd;
+
 .container {
   padding: 0 2rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.link:hover {
+  color: $page-green;
+  text-decoration: underline;
+}
+
+.exlink,
+.applink {
+  margin-right: 4px;
+  display: inline-flex;
+  position: relative;
+  top: 1.8px;
+}
+
+.applink {
+  color: $page-green;
+}
+
+.listItem {
+  font-size: 0.9rem;
+  li {
+    margin: 4px 0;
+    list-style: none;
+  }
+}
+
+.tableTxt {
+  font-size: 0.8rem;
+}
+.trBkg {
+  background-image: linear-gradient($border-lines 1px, transparent 1px),
+    linear-gradient(90deg, $border-lines 1px, transparent 1px);
+  background-size: 15px 15px;
+  border-right: 1px solid $border-lines;
+  td {
+    border: 0 none;
+    display: table-cell;
+  }
 }

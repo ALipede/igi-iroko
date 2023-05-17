@@ -1,11 +1,54 @@
+$page-green: #039494;
+$page-black: #333;
+
 .container {
   padding: 0 2rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.iconsTable {
+  max-width: 500px;
+  display: flex;
+  td {
+    width: 50px;
+    max-width: 50px;
+    margin: 0.25rem;
+    height: 50px;
+    max-height: 50px;
+    display: inline-table;
+    img {
+      width: 50px;
+      height: 50px;
+      display: inline-table;
+      border: 1px solid #aaa;
+    }
+  }
+}
+
+.iconsTr {
+  width: 100%;
+  display: inline-table;
+  td.iconsTr_Td {
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+  }
+}
+
+.imgBorder {
+  border: 2px solid $page-black;
+  display: block;
+}
+
+.iconBtn {
+  object-fit: cover;
+  max-width: 52px;
+  width: 52px;
+  min-width: 52px;
+  max-height: 52px;
+  height: 52px;
+  min-height: 52px;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  display: table-row;
 }

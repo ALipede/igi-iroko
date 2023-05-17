@@ -2,66 +2,114 @@
 
 $font-orbitron: 'Orbitron', sans-serif;
 $font-roboto: 'Roboto', sans-serif;
+$page-green: #039494;
+$page-light-green: #6fbbbb;
+$page-pale-green: #eee;
+$page-dark-grey: #666;
+$page-yellow: #fc0;
+$border-lines: #ddd;
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 100% $font-roboto;
-  color: #666;
+  color: $page-dark-grey;
 }
-
-h1 {
-  font-family: $font-orbitron;
-  margin: 1rem 0;
-  color: #039494;
-  font-size: 1.7rem !important;
-}
-
-p {
-  font-size: 0.8rem;
-  font-weight: 300;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-a:hover,
-hr {
-  color: #039494;
-}
-
-.carousel-caption h3 {
-  font-size: 01rem;
-  font-family: $font-orbitron;
-  color: #039494 !important;
-}
-
-.carousel {
-  background-image: linear-gradient(#ddd 1px, transparent 1px),
-    linear-gradient(90deg, #ddd 1px, transparent 1px);
-  background-size: 20px 20px;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-
-.carousel-caption h3,
-.carousel-caption p {
-  color: #666;
-}
-
-.carousel-indicators [data-bs-target] {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #fc0;
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-md {
   padding: 1.5rem 0;
 }
 
+h1,
+h2 {
+  font-family: $font-orbitron;
+}
+
+h1 {
+  margin: 1rem 0 0 1rem;
+  color: $page-green;
+  font-size: 2rem !important;
+}
+h2 {
+  color: $page-light-green;
+  font-size: 1.05rem !important;
+  letter-spacing: 0.06rem;
+}
+h5 {
+  color: $page-dark-grey;
+  font-size: 0.9rem !important;
+}
+p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+a,
+.list-group-item {
+  color: inherit;
+  text-decoration: none;
+  a:hover,
+  .list-group-item:hover {
+    color: $page-green !important;
+  }
+}
+
+hr {
+  color: $page-green;
+}
+
+// Carousel Styles
+.carousel {
+  background-image: linear-gradient($border-lines 1px, transparent 1px),
+    linear-gradient(90deg, $border-lines 1px, transparent 1px);
+  background-size: 20px 20px;
+  border-right: 1px solid $border-lines;
+  border-bottom: 1px solid $border-lines;
+  margin-bottom: 1.5rem;
+  .carousel-caption {
+    h5 {
+      font-size: 01rem;
+      font-family: $font-orbitron;
+    }
+    p {
+      color: $page-dark-grey;
+    }
+  }
+
+  .carousel-indicators [data-bs-target] {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: $page-yellow;
+  }
+}
+
+.MuiTableCell-head {
+  svg {
+    font-size: 1.5em;
+    color: $page-light-green;
+  }
+}
+
 * {
   box-sizing: border-box;
+}
+
+// Accordion Styles
+.accordion-button {
+  &:not(.collapsed) {
+    background-color: $page-pale-green;
+    color: $page-green;
+  }
+  &:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+  }
 }
