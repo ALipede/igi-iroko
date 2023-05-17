@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import { Table } from 'reactstrap';
 import classes from './digital-arts.module.scss';
 import Image from 'react-bootstrap/Image';
 
 function IconsSetOne() {
+  const router = useRouter();
+  const { id } = router.query;
   const [dataResponse, setDataResponse] = useState([]);
 
   useEffect(() => {

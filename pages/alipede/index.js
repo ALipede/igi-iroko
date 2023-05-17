@@ -11,13 +11,12 @@ export default function AipedePage() {
       <Head>
         <title>igi iroko | A.Lipẹdé</title>
       </Head>
-      <main className={classes.main}>
-        <h1>Afolabi Lipedé</h1>
-        <ContainerItem>
-          <ALipedeProfile />
-          <ProfileTxt />
-        </ContainerItem>
-      </main>
+
+      <h1>Afolabi Lipedé</h1>
+      <ContainerItem>
+        <ALipedeProfile />
+        <ProfileTxt />
+      </ContainerItem>
     </>
   );
 }

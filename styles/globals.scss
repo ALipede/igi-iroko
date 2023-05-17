@@ -16,6 +16,14 @@ body {
   font-family: 100% $font-roboto;
   color: $page-dark-grey;
 }
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-md {
   padding: 1.5rem 0;
 }

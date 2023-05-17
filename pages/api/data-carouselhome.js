@@ -1,21 +1,11 @@
-import mysql from 'mysql2/promise';
+import { query } from '../../lib/db';
 
 export default async function handler(req, res) {
-  const dbconnection = await mysql.createConnection({
-    host: 'localhost',
-    database: 'web_development',
-    port: 3306,
-    user: 'root',
-    password: 'j0j01ss1#MySQL',
-    socketPath: '/tmp/mysql.sock',
-  });
-
   try {
-    const query =
+    const querySql =
       'SELECT id, title, alt, description, image FROM carousel_home';
     const values = [];
-    const [data] = await dbconnection.execute(query, values);
-    dbconnection.end();
+    const data = await query({ query: querySql, values: values });
 
     res.status(200).json({ carouselhome: data });
   } catch (error) {

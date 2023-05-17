@@ -25,9 +25,9 @@ $page-dark-grey: #666;
   background: none !important;
   margin: 0;
   padding: 0;
+  text-indent: -2px;
   color: $page-dark-grey;
-}
-
-.cvbtn:hover {
-  color: $page-green;
+  &:hover {
+    color: $page-green;
+  }
 }

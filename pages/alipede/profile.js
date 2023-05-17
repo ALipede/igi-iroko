@@ -9,7 +9,9 @@ function ALipedeProfile() {
         alt="A.Lipede"
         src="/images/alipede/alipede.jpg"
       />
-      <Figure.Caption>Frontend Web Developer | Web Designer:</Figure.Caption>
+      <Figure.Caption>
+        <em>Frontend Web Developer | Web Designer:</em>
+      </Figure.Caption>
     </Figure>
   );
 }

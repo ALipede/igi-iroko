@@ -27,7 +27,6 @@ function CarouselHome() {
                 alt={carousels.alt}
               />
               <Carousel.Caption>
-                {/* <h3>{carousels.title}</h3> */}
                 <p>{carousels.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
