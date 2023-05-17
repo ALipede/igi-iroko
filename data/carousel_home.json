@@ -1,0 +1,5 @@
+[{"id":101, "title":"First slide label", "alt":"image alt 1", "description":"001", "image":"/images/home/igi-iroko-001.png"},
+ {"id":102, "title":"Second slide label", "alt":"image alt 2", "description":"002", "image":"/images/home/igi-iroko-002.png"},
+ {"id":103, "title":"Third slide label", "alt":"image alt 3", "description":"003", "image":"/images/home/igi-iroko-003.png"},
+ {"id":104, "title":"Forth slide label", "alt":"image alt 4", "description":"004", "image":"/images/home/igi-iroko-004.png"},
+ {"id":105, "title":"Fifth slide label", "alt":"image alt 5", "description":"005", "image":"/images/home/igi-iroko-005.png"}]
